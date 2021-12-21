@@ -19,30 +19,30 @@
   </head>
   <body>
     <!-- header-section -->
-    <header class="header-section">
+    <header class="header">
       <div class="container">
-        <a href="./index.html" lang="en" class="header-logo"
-          >Web<span class="header-logo-studio">Studio</span></a
+        <a href="./index.html" lang="en" class="header__logo"
+          >Web<span class="header__logo--studio">Studio</span></a
         >
         <nav>
           <ul class="site-nav">
-            <li><a class="site-link active" href="./index.html">Студия</a></li>
-            <li><a class="site-link" href="./portfolio.html">Портфолио</a></li>
-            <li><a class="site-link" href="#">Контакты</a></li>
+            <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contacts-header"
-              ><svg class="contact-icon" width="16" height="12">
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a href="mailto:info@devstudio.com" class="header-contacts__link"
+              ><svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="contacts-header"
-              ><svg class="contact-icon" width="10" height="16">
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="header-contacts__link"
+              ><svg class="header-contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -53,9 +53,9 @@
     </header>
     <main>
       <!-- hero-section -->
-      <section class="hero section">
-        <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
+      <section class="hero">
+        <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- advantages-section -->
