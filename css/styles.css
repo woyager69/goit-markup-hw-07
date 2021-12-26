@@ -363,7 +363,7 @@ body {
 .form__input:focus + .form__icon {
   fill: var(--accent-color);
 }
-.checkbox {
+.checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -373,7 +373,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.checkbox__area {
+.checkbox {
   display: inline-flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -416,13 +416,15 @@ body {
 
   color: var(--accent-color);
 }
-.checkbox:focus + .checkbox__label .checkbox__field {
+.checkbox__input:focus + .checkbox__field {
   outline-color: var(--accent-color);
 }
-.checkbox:checked + .checkbox__label .checkbox__field {
+.checkbox__input:checked + .checkbox__field {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  outline-color: transparent;
+}
+.checkbox__input:checked:focus + .checkbox__field {
+  outline-color: black;
 }
 .modal__btn:hover,
 .modal__btn:focus {
