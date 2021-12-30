@@ -1,6 +1,4 @@
-{
-  "liveServer.settings.port": 5501
-}
+
 {
   "liveSassCompile.settings.formats": [
     {
@@ -19,7 +17,7 @@
     "last 10 versions"
   ],
   "liveSassCompile.settings.generateMap": true,
-  "liveServer.settings.port": 5100,
+  "liveServer.settings.port": 5501,
   "liveSassCompile.settings.excludeList": [
     "**/node_modules/**",
     ".vscode/**",
