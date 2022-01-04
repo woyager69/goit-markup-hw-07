@@ -142,9 +142,9 @@ body {
 .header .container,
 .site-nav,
 .header-contacts,
-.features__list,
-.examples__images,
-.team__list {
+.features,
+.examples,
+.team {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -470,11 +470,12 @@ body {
   color: var(--primary-text-color);
 }
 /* section-examples */
-.examples {
+.section-examples {
+  display: flex;
   padding-top: 2px;
   padding-bottom: 94px;
 }
-.examples__thumb {
+.examples__item {
   position: relative;
   overflow: hidden;
 }
@@ -498,7 +499,7 @@ body {
   color: #fff;
 }
 /* our team section */
-.team {
+.team-section {
   background-color: var(--main-background-color);
 }
 .team__card {
