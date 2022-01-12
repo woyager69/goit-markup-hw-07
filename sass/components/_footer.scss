@@ -34,11 +34,12 @@
   margin-top: 6px;
   color: $address-text-color;
   transition: color $function-transition;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
-.address__contact:hover,
-.address__contact:focus {
-  color: $accent-color;
-}
+
 .follow {
   margin-left: 86px;
 }
@@ -56,11 +57,12 @@
 .follow__link {
   background-color: #ffffff1a;
   transition: background-color $function-transition;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
-.follow__link:hover,
-.follow__link:focus {
-  background-color: $accent-color;
-}
+
 .follow__icon {
   fill: $primary-white-color;
 }

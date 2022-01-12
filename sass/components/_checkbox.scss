@@ -1,18 +1,9 @@
-.checkbox__input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .checkbox {
   display: inline-flex;
   justify-content: center;
   margin-bottom: 30px;
 }
+
 .checkbox__label {
   display: flex;
   font-size: 14px;
@@ -35,6 +26,16 @@
   transition: background-color $function-transition, border-color $function-transition,
     outline-color $function-transition;
   outline: 2px solid transparent;
+  .checkbox__input:focus + & {
+    outline-color: $accent-color;
+  }
+  .checkbox__input:checked + & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+  }
+  .checkbox__input:checked:focus + & {
+    outline-color: black;
+  }
 }
 .checkbox__icon {
   position: absolute;
@@ -49,14 +50,4 @@
   text-decoration-skip-ink: none;
 
   color: $accent-color;
-}
-.checkbox__input:focus + .checkbox__field {
-  outline-color: $accent-color;
-}
-.checkbox__input:checked + .checkbox__field {
-  border-color: $accent-color;
-  background-color: $accent-color;
-}
-.checkbox__input:checked:focus + .checkbox__field {
-  outline-color: black;
 }

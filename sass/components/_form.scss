@@ -26,12 +26,15 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color $function-transition;
-}
-.comment__input::placeholder {
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    border-color: $accent-color;
+  }
 }
 
 .form__input {
@@ -43,12 +46,11 @@
   border-radius: 4px;
   outline: none;
   transition: border-color $function-transition;
+  &:focus {
+    border-color: $accent-color;
+  }
 }
-.form__input:focus,
-.comment__input:focus {
-  border-color: $accent-color;
-  /* outline-color: $accent-color); */
-}
+
 .form__label {
   font-weight: normal;
   font-size: 12px;
@@ -65,7 +67,7 @@
   transform: translateY(-50%);
   fill: $title-text-color;
   transition: fill $function-transition;
-}
-.form__input:focus + .form__icon {
-  fill: $accent-color;
+  .form__input:focus + & {
+    fill: $accent-color;
+  }
 }

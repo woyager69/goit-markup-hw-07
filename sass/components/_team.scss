@@ -34,16 +34,16 @@
 .team__link {
   background-color: $primary-white-color;
   transition: background-color $function-transition;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 .team__icon {
   fill: $icon-color;
   transition: fill $function-transition;
-}
-.team__link:hover,
-.team__link:focus {
-  background-color: $accent-color;
-}
-.team__link:hover .team__icon,
-.team__link:focus .team__icon {
-  fill: $primary-white-color;
+  .team__link:hover &,
+  .team__link:focus & {
+    fill: $primary-white-color;
+  }
 }

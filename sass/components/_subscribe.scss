@@ -31,17 +31,18 @@
   border: 1px solid rgba(109, 110, 117, 1);
   border-radius: 4px;
   transition: border-color $function-transition;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    border-color: $accent-color;
+    outline: $accent-color;
+  }
 }
-.subscribe__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.subscribe__input:focus {
-  border-color: $accent-color;
-  outline: $accent-color;
-}
+
 .subscribe__btn:hover,
 .subscribe__btn:focus {
   background-color: $active-button-color;

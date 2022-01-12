@@ -30,17 +30,15 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* .modal__close-btn:focus {
-  outline-color: $accent-color);
-} */
 .modal__close-icon {
   fill: rgba(0, 0, 0, 1);
   transition: fill $function-transition;
+  .modal__close-btn:hover &,
+  .modal__close-btn:focus & {
+    fill: $accent-color;
+  }
 }
-.modal__close-btn:hover .modal__close-icon,
-.modal__close-btn:focus .modal__close-icon {
-  fill: $accent-color;
-}
+
 .modal__title {
   font-weight: bold;
   font-size: 20px;

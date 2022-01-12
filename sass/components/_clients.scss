@@ -17,16 +17,17 @@
   border: 1px solid $icon-color;
   background-color: $primary-white-color;
   transition: border-color $function-transition;
+  &:focus,
+  &:hover {
+    border-color: $accent-color;
+  }
 }
-.clients__link:focus,
-.clients__link:hover {
-  border-color: $accent-color;
-}
+
 .clients__icon {
   fill: $icon-color;
   transition: fill $function-transition;
-}
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: $accent-color;
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
 }
