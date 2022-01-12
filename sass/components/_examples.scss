@@ -3,6 +3,9 @@
   padding-top: 2px;
   padding-bottom: 94px;
 }
+.examples {
+  @extend %flex;
+}
 .examples__item {
   position: relative;
   overflow: hidden;

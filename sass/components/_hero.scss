@@ -23,10 +23,13 @@
 
   color: $primary-white-color;
 }
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: $active-button-color;
-}
-.hero__btn:focus {
-  outline-color: $primary-white-color;
+.hero__btn {
+  @extend %button;
+  &:hover,
+  &:focus {
+    background-color: $active-button-color;
+  }
+  &:focus {
+    outline-color: $primary-white-color;
+  }
 }

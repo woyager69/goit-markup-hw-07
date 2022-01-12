@@ -49,11 +49,13 @@
 
   color: $title-text-color;
 }
-
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: $active-button-color;
-}
-.modal__btn:focus {
-  outline-color: $title-text-color;
+.modal__btn {
+  @extend %button;
+  &:hover,
+  &:focus {
+    background-color: $active-button-color;
+  }
+  &:focus {
+    outline-color: $title-text-color;
+  }
 }
