@@ -43,7 +43,7 @@
   }
 }
 .subscribe__btn {
-  @extend %button;
+  @extend .button;
   &:hover,
   &:focus {
     background-color: $active-button-color;
